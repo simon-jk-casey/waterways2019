@@ -13,10 +13,10 @@ export default class Landing extends Component {
     return (
       <div>
         <div className='heading'>
-          <h2>Waterway Self Assessment</h2>
+          <h1>Waterway Self Assessment</h1>
         </div>
         <div>
-          <h6>Welcome {this.state.name}</h6>
+          <h2>Welcome {this.state.name}</h2>
         </div>
         <div>
           <ul>
