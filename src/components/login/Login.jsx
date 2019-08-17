@@ -17,7 +17,7 @@ export default class Login extends Component {
         <div>
           <input type="text" placeholder='username' />
           <input type='text' placeholder='password' /> {/*make this a password input */}
-          <a href="">LOGIN</a> {/* make this a link to landing page, with err handle */}
+          <Link to='/landing'>LOGIN</Link>
         </div>
       </div>
     )
