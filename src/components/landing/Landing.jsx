@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Survey from '../survey/Survey'
 
 import './Landing.css'
 
@@ -26,7 +27,8 @@ export default class Landing extends Component {
             <li>menu item</li>
           </ul>
         </div>
-        <a href="">START SURVEY</a>
+        <button>START SURVEY</button>
+        <Survey />
       </div>
     )
   }
