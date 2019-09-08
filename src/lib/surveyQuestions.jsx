@@ -506,6 +506,7 @@ export const surveyQuestions = [
       }
     ]
   },
+  {
     s: '5',
     n: 'b',
     q: 'How deeply incised are your stream banks?',
@@ -528,6 +529,7 @@ export const surveyQuestions = [
       }
     ]
   },
+  {
     s: '5',
     n: 'c',
     q: 'What is on the streambed?',
@@ -550,6 +552,7 @@ export const surveyQuestions = [
       }
     ]
   },
+  {
     s: '5',
     n: 'd',
     q: 'How cohesive are the soils of the streambank?',
@@ -572,6 +575,7 @@ export const surveyQuestions = [
       }
     ]
   },
+  {
     s: '5',
     n: 'e',
     q: 'How well do your soils drain after rain?',

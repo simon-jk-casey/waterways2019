@@ -14,18 +14,29 @@ export default class Survey extends Component {
       answers: []
     }
   }
+
+  clickHandler (e) {
+    e.preventDefault()
+    let submittedAnswer = {[e.target.name]: e.target.value}
+    this.setState(prevState => ({
+      index: prevState.index + 1,
+      answers: [...prevState.answers, submittedAnswer]
+    }))
+  }
+
   render () {
     const currentPosition = this.state.questions[this.state.index]
     const currentQuestion = currentPosition.q
-    const qNo = currentPosition.s + currentPosition.n + '.'
+    const qNo = currentPosition.s + currentPosition.n
     const currentAnswers = currentPosition.a
     return (
       <div>
-        {console.log(this.state.questions, 'questions')}
+        {console.log(this.state.answers, 'answers')}
         <Question
           qTitle={qNo}
           question={currentQuestion}
           answers={currentAnswers}
+          handler={this.clickHandler.bind(this)}
         />
       </div>
     )

@@ -7,7 +7,7 @@ export default class Question extends Component {
     return (
       <div>
         <div>
-          <h3>{this.props.qTitle} {this.props.question}</h3>
+          <h3>{this.props.qTitle}. {this.props.question}</h3>
         </div>
         <div>
           <ul>
@@ -15,7 +15,7 @@ export default class Question extends Component {
               this.props.answers.map((answer, i) => {
                 return (
                   <li key={i}>
-                    <button value={answer.score}>{answer.text}</button>
+                    <button name={this.props.qTitle} value={answer.score} onClick={this.props.handler}>{answer.text}</button>
                   </li>
                 )
               })
